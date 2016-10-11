@@ -1,0 +1,14 @@
+ digraph server {
+    "ChatServer" -> "ChatRoom";
+    "ChatServer" -> "ChatSession";
+    
+    "ChatSession" -> "ChatMember";
+    "ChatSession" -> "ChatRoom";
+    "ChatSession" -> "ChatMessage";
+    "ChatSession" -> "ChatMessageQueue";
+
+    "ChatRoom" -> "ChatMember";
+    "ChatRoom" -> "ChatMessage";
+    "ChatRoom" -> "ChatMessageQueue";
+ }
+ 
